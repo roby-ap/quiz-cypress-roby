@@ -20,7 +20,11 @@ describe('template spec', () => {
 
   })
 
-  it('', () => {
+  it('Can access correct login page', () => {
+
+    LoginPage.clickLoginBtn()
+
+    cy.url().should('include', '/login')
 
   })
 

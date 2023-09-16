@@ -8,7 +8,7 @@ class LoginPage {
 
     clickLoginBtn() {
 
-        this.elements.loginBtn.click()
+        this.elements.loginBtn().click()
 
     }
   
