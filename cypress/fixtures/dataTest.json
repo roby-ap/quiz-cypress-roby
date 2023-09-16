@@ -1,0 +1,55 @@
+{
+  "registration": 
+      [
+        {
+            "gender": true,
+            "firstname": false,
+            "lastname": true,
+            "email": true,
+            "password": true,
+            "confpassword": true
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": false,
+            "email": true,
+            "password": true,
+            "confpassword": true
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": false,
+            "password": true,
+            "confpassword": true
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "password": false,
+            "confpassword": true
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "password": true,
+            "confpassword": false
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "password": false,
+            "confpassword": false
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "password": true,
+            "confpassword": true
+        }
+      ]
+}

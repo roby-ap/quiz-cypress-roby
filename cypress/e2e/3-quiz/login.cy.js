@@ -1,3 +1,5 @@
+import LoginPage from '../../support/page-objects/loginPage.js'
+
 describe('template spec', () => {
 
   beforeEach(() => {
@@ -14,9 +16,11 @@ describe('template spec', () => {
 
   it('Website can access', () => {
 
-    cy.visit('')
-
     cy.get('.topic-html-content-header').should('include.text','Welcome to our store')
+
+  })
+
+  it('', () => {
 
   })
 
