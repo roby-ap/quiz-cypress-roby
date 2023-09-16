@@ -32,6 +32,8 @@ class RegisterPage {
 
         validationIsRequired5 : () => cy.get(':nth-child(3) > .form-fields > :nth-child(2) > .field-validation-error > span'),
 
+        registerSuccess : () => cy.get('.result'),
+
         logout : () => cy.get('.ico-logout'),
 
         myaccount : () => cy.get('.header-links > ul > :nth-child(1) > .account')
@@ -99,6 +101,12 @@ class RegisterPage {
     // }
 
     clickContinueRegBtn(data){
+
+        cy.log('abc')
+
+        this.elements.registerSuccess()
+        .should('be.visible')
+        .should('include.text', 'Your registration completed')
 
         this.elements.continueRegBtn()
         .should('be.visible')

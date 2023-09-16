@@ -49,6 +49,13 @@
             "lastname": true,
             "email": true,
             "password": true,
+            "confpassword": "modif"
+        }, {
+            "gender": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "password": true,
             "confpassword": true
         }
       ]

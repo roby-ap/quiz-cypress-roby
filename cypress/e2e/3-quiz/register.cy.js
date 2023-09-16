@@ -38,7 +38,7 @@ describe('template spec', () => {
 
   })
 
-  it.only('Register failed, field is empty', () => {
+  it.only('Register Feature : With 8 case condition (dataTest : registration)', () => {
 
     cy.fixture('dataTest.json').then((data) => {
 
@@ -85,9 +85,15 @@ describe('template spec', () => {
 
         }
 
-        if (dt.registration[i].confpassword) {
+        if (dt.registration[i].confpassword == true) {
 
           var dataconfpassword = password
+
+        }
+
+        if (dt.registration[i].confpassword == "modif") {
+
+          var dataconfpassword = 'password'
 
         }
 
@@ -101,7 +107,13 @@ describe('template spec', () => {
 
         cy.checkIsRequired(datagender, datafirstname, datalastname, dataemail, datapassword, dataconfpassword)
 
-        RegPage.clickContinueRegBtn(dataemail)
+        cy.log(datagender, datafirstname, datalastname, dataemail, datapassword, dataconfpassword)
+
+        if (datagender != '' && datafirstname != '' && datalastname != '' && dataemail != '' && datapassword != '' && dataconfpassword != '') {
+
+          RegPage.clickContinueRegBtn(dataemail)
+          
+        }
 
       } // end loop
 
