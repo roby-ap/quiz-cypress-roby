@@ -44,7 +44,7 @@ describe('template spec', () => {
 
       const dt = data;
 
-      for (let i = 6; i < dt.registration.length; i++) { // start loop
+      for (let i = 0; i < dt.registration.length; i++) { // start loop
 
         cy.log("data registrasi ke "+i)
 
